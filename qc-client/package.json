@@ -7,10 +7,6 @@
     "app:serve:dev": "nx run application:serve:development"
   },
   "private": true,
-  "dependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  },
   "devDependencies": {
     "@nrwl/cypress": "15.9.2",
     "@nrwl/eslint-plugin-nx": "15.9.2",
