@@ -2,7 +2,10 @@
   "name": "qc-client",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "app:serve:prod": "nx run application:serve:production",
+    "app:serve:dev": "nx run application:serve:development"
+  },
   "private": true,
   "dependencies": {
     "react": "18.2.0",

@@ -1,7 +1,7 @@
 {
-  "name": "user-today-todo",
+  "name": "application",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/user-today-todo/src",
+  "sourceRoot": "apps/application/src",
   "projectType": "application",
   "targets": {
     "build": {
@@ -9,7 +9,7 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/apps/user-today-todo"
+        "outputPath": "dist/apps/application"
       },
       "configurations": {
         "development": {
@@ -24,15 +24,15 @@
       "executor": "@nrwl/vite:dev-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "user-today-todo:build"
+        "buildTarget": "application:build"
       },
       "configurations": {
         "development": {
-          "buildTarget": "user-today-todo:build:development",
+          "buildTarget": "application:build:development",
           "hmr": true
         },
         "production": {
-          "buildTarget": "user-today-todo:build:production",
+          "buildTarget": "application:build:production",
           "hmr": false
         }
       }
@@ -41,36 +41,36 @@
       "executor": "@nrwl/vite:preview-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "user-today-todo:build"
+        "buildTarget": "application:build"
       },
       "configurations": {
         "development": {
-          "buildTarget": "user-today-todo:build:development"
+          "buildTarget": "application:build:development"
         },
         "production": {
-          "buildTarget": "user-today-todo:build:production"
+          "buildTarget": "application:build:production"
         }
       }
     },
     "test": {
       "executor": "@nrwl/vite:test",
-      "outputs": ["coverage/apps/user-today-todo"],
+      "outputs": ["coverage/apps/application"],
       "options": {
         "passWithNoTests": true,
-        "reportsDirectory": "../../coverage/apps/user-today-todo"
+        "reportsDirectory": "../../coverage/apps/application"
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/user-today-todo/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/application/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "serve-static": {
       "executor": "@nrwl/web:file-server",
       "options": {
-        "buildTarget": "user-today-todo:build"
+        "buildTarget": "application:build"
       }
     }
   },

@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 import viteTsConfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
-  cacheDir: "../../node_modules/.vite/user-today-todo",
+  cacheDir: "../../node_modules/.vite/application",
 
   server: {
     port: 4200,
