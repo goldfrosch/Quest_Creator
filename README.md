@@ -9,7 +9,7 @@ Frontend
 - Typescript, React, Nx, React-Query, vanila-extract, jotai
 
 Backend
-- Kotlin, Jpa, QueryDsl, spring-boot, jwt
+- Kotlin, Jpa, QueryDsl, spring-boot, jwt, mariadb
 
 커뮤니티 같은건 없구요
 
