@@ -10,6 +10,10 @@ export default defineConfig({
   server: {
     port: 4200,
     host: "localhost",
+    // vite에서 허용된 디렉토리만 서빙이 가능해서 allow 속성을 현재 디렉토리에 전부 설정을 해줘야 함
+    fs: {
+      allow: ["./"]
+    }
   },
 
   preview: {
