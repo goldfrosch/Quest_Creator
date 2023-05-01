@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@qc-client/ui": ["libs/ui/src/index.ts"]
+      "@qc-client/qc-component": ["libs/qc-component/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
