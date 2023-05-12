@@ -1,9 +1,16 @@
+const { mergeConfig } = require('vite');
+const rootMain = require('../../../.storybook/main');
+
 const config = {
   stories: ['../src/lib/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
-  addons: ['@storybook/addon-essentials'],
   framework: {
     name: '@storybook/react-vite',
     options: {},
+  },
+  async viteFinal(config, { configType }) {
+    return mergeConfig(config, {
+      ...((await rootMain.viteFinal(config, { configType })) ?? {})
+    });
   },
 };
 
