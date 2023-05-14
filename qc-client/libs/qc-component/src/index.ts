@@ -1,1 +1,1 @@
-export * from './lib/qc-component';
+export * from './lib/components/button';
