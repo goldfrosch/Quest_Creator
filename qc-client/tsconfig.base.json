@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@qc-client/qc-common": ["libs/qc-common/src/index.ts"],
       "@qc-client/qc-component": ["libs/qc-component/src/index.ts"]
     }
   },
