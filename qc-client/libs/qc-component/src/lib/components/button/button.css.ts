@@ -2,8 +2,8 @@ import { styleVariants } from '@vanilla-extract/css';
 import { PALETTE } from '../../themes/palette';
 
 export const background = styleVariants({
-  primary: { background: 'blue' },
-  secondary: { background: 'aqua' },
+  primary: { backgroundColor: 'blue' },
+  secondary: { backgroundColor: 'aqua' },
 });
 
 const ButtomTheme: {
