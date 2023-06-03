@@ -1,19 +1,17 @@
 import { styleVariants } from '@vanilla-extract/css';
 import { PALETTE } from '../../themes/palette';
+import { BorderTheme, ColorTheme } from '@libs/qc-common';
 
-export const background = styleVariants({
-  primary: { backgroundColor: 'blue' },
-  secondary: { backgroundColor: 'aqua' },
-});
+type ButtonThemeKey = 'primary' | 'secondary';
+export type ButtonThemeType = Record<ButtonThemeKey, ColorTheme & BorderTheme>;
 
-const ButtomTheme: {
-  [key: string]: {
-    backgroundColor: keyof typeof PALETTE | string;
-    borderColor: keyof typeof PALETTE | string;
-    color: keyof typeof PALETTE | string;
-  };
-} = {
+export const ButtomTheme: ButtonThemeType = {
   primary: {
+    backgroundColor: PALETTE.BLUE[3],
+    borderColor: PALETTE.BLUE[4],
+    color: PALETTE.white,
+  },
+  secondary: {
     backgroundColor: PALETTE.BLUE[3],
     borderColor: PALETTE.BLUE[4],
     color: PALETTE.white,
